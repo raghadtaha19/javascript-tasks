@@ -9,8 +9,8 @@ for (i=1; i<=10 ; i++) {
 */
 
    var arr = [13,23,12,45,22,48,66,100];
-   for (i=0 ;i<(arr.length-1) ;i++){
-   if (arr[0]%2==0){
+   for (i=0 ;i<(arr.length) ;i++){
+   if (arr[i]%2==0){
     console.log("the number is even", arr[i] );
    }
    else {
@@ -49,14 +49,13 @@ console.log(num);
 let x = "don’t know why"
 
 */
-// let x = "don't know why";
-// function Check (x);
-// for (i = 0; i < x.length; i++) {
-//     var ascii = x[i];
-//     if (ascii==121) {
-//         console.log("Yes");
-//     }
-//     else {
-//         console.log("NO");
-//     }
-// }
+let x = "don't know why";
+
+if (x.includes("y")) {
+  console.log("yes");
+}
+
+else {
+  console.log("no");
+}
+

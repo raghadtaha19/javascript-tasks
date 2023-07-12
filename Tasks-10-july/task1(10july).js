@@ -7,13 +7,13 @@ num1=prompt("Input the first integer")
 
 num2=prompt("Input the second integer")
 
-if(parseInt(num1,10)>parseInt(num2,10)){
-    console.log("the larger is"+num1);
+if(parseInt(num1)>parseInt(num2)){
+    console.log(`the larger number is ${num1}`);
 
 }
 
-else if (parseInt(num1,10)<parseInt(num2,10)) {
-    console.log("the larger is"+num2);
+else if (parseInt(num1)<parseInt(num2)) {
+    console.log(`the larger number is ${num2}`);
 }
 else {
     console.log("the numbers are equal");

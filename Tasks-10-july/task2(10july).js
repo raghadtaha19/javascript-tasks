@@ -9,21 +9,21 @@ equal or between 90 and 100 ===> A
 
 let avg ;
 avg = prompt("Enter Your Average from 100");
-if (avg>=90 && avg<100){
+if (avg>=90 && avg<=100){
     console.log ("A")
 
 }
-else if (avg>=80 && avg<=89){
+else if (avg >= 80){
     console.log ("B")
 }
-else if (avg>=70 && avg<=79){
+else if (avg>=70){
     console.log ("C")
 
 }
-else if (avg>=60 && avg<=69){
+else if (avg>=60){
     console.log("D")
 }
-else if (avg>=50 && avg<=59){
+else if (avg>=50){
     console.log ("E")
 }
 else {
