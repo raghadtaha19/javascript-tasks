@@ -192,13 +192,13 @@ Ex: multiply(5,4)
 */
 
 
-// function multiply(num1,num2){
-//   return num1*num2;
-// }
+function multiply(num1,num2){
+  return num1*num2;
+}
 // let  num1 = prompt("Enter  number 1:");
 // let  num2 = prompt("Enter  number 2:");
 
-// console.log(multiply(num1,num2) )
+console.log(multiply(5) )        
 
 
 
@@ -370,20 +370,20 @@ Ex: shorterString("air","tr","car","github","by")
 
 
 
-// function shorterString(str1, str2, str3, str4, str5) {
-//   const strings = [str1, str2, str3, str4, str5]; 
-//   let shortest = strings[0]; 
+function shorterString(str1, str2, str3, str4, str5) {
+  const strings = [str1, str2, str3, str4, str5]; 
+  let shortest = strings[0]; 
   
-//   for (let i = 1; i < strings.length; i++) {
-//     if (strings[i].length < shortest.length) {
-//       shortest = strings[i]; 
-//     }
-//   }
+  for (let i = 1; i < strings.length; i++) {
+    if (strings[i].length < shortest.length) {
+      shortest = strings[i]; 
+    }
+  }
   
-//   return shortest;
-// }
+  return shortest;
+}
 
-//  console.log(shorterString("air", "school", "car", "by", "github")); 
+ console.log(shorterString("air", "school", "car", "by", "github")); 
 
 
 
@@ -708,27 +708,25 @@ Ex: counter()
 */
 
 
-let count = 0; 
+// let count = 0; 
 
-function counter() {
-  count++; 
-  return count; 
-}
+// function counter() {
+//   count++; 
+//   return count; 
+// }
 
-function resetCounter() {
-  const previousCount = count; 
-  count = 0; 
-  return {
-    previousCount: previousCount,
-    message: "The counter has been reset."
-  };
-}
+// function resetCounter() {
+
+//   console.log(count, "and the counter reset now")
+//   count = 0; 
+//   return ++count;
+  
+  
+// }
 
 
-console.log(counter()); 
-console.log(counter());
-console.log(counter()); 
-console.log(counter()); 
-
-console.log(resetCounter()); 
-console.log(counter()); 
+// console.log(counter()); 
+// console.log(counter());
+// console.log(counter()); 
+// console.log(resetCounter()); 
+// console.log(counter()); 
