@@ -1,7 +1,7 @@
-function text(){
-  document.getElementById("text").innerHTML="Can i help you?"
+let color = document.querySelector(".color");
+document.body.style.backgroundColor = sessionStorage.getItem("color");
 
-}
-function text1(){
-  document.getElementById("text").innerHTML="Hello World!"
-}
+color.addEventListener("input", function () {
+  document.body.style.backgroundColor = color.value;
+  sessionStorage.setItem("color", color.value);
+});

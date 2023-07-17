@@ -1,54 +1,53 @@
-let x=document.getElementById('types');
-let y=document.getElementById('text');
-
-
-x.addEventListener('change', function(){
-  if(x.value=="Times New Roman"){
-    y.style.fontFamily="'Times New Roman', Times, serif";
-  }
-  else{
-    y.style.fontFamily="Fantasy";
+let span = document.querySelectorAll(".fname");
+console.log(span);
+function f_name() {
+  let fname = document.querySelector("#fname");
+  let fnamereg = /^([^0-9]*)$/;
+  if (fnamereg.test(fname.value) === false) {
+    span[0].innerHTML = "numbers are not allow";
   }
 }
-)
-let z=document.getElementById('sizes');
-z.addEventListener('change', function(){
-    if(z.value=="10px"){
-      y.style.fontSize="10px";
-    }
-    else{
-      y.style.fontSize="15px";
-    }
+function l_name() {
+  let lname = document.querySelector("#lname");
+  let fnamereg = /^([^0-9]*)$/;
+  if (fnamereg.test(lname.value) === false) {
+    span[1].innerHTML = "numbers are not allow";
   }
-  )
+}
+function date() {
+  let date = document.querySelector("#date");
+  let fnamereg = /^(\d{4})(\/|-)(\d{1,2})(\/|-)(\d{1,2})$/;
+  if (fnamereg.test(date.value) === false) {
+    span[2].innerHTML = "the format should be yyyy/mm/dd";
+  }
+}
+function email() {
+  let email = document.querySelector("#email");
+  let fnamereg = /[a-z0-9]$+@[a-z]+\.[a-z]{2,3}/;
+  if (fnamereg.test(email.value) === false) {
+    span[3].innerHTML = "the email is not valid";
+  }
+}
+function confirm_email() {
+  let email = document.querySelector("#email");
+  let confirm = document.querySelector("#confirm");
 
-  const I = document.getElementById('style1');
-  const B = document.getElementById('style2');
-  const U = document.getElementById('style3');
-  I.addEventListener('change', function () {
-      if (I.checked == true) {
-          y.style.fontStyle = "Italic"
-      }
-      else{
-        y.style.fontStyle = "normal";
-    } 
-  });
-  
-  B.addEventListener('change', function () {
-      if (B.checked == true) {
-          y.style.fontWeight = "Bold"
-      }
-      else{
-        y.style.fontWeight = "normal";
-    } 
-  });
-  U.addEventListener('change', function () {
-      if (U.checked == true) {
-         y.style.textDecoration = "underline";
-      }
-      else{ 
-        y.style.textDecoration = "none";
-    }  
-  });
-
-  
+  if (email.value !== confirm.value) {
+    span[4].innerHTML = "the email is not valid";
+  }
+}
+function password() {
+  let password = document.querySelector("#Password");
+  let fnamereg = /^(?=.*[0-9])(?=.*[!@#$%^&*_])[a-zA-Z0-9!@#$%^&*_]{8,16}$/;
+  if (fnamereg.test(password.value) === false) {
+    span[5].innerHTML =
+      "the password should have at least one special caracter and one number (8-16) caracter";
+  }
+}
+function confirm_pass() {
+  let Password = document.querySelector("#Password");
+  let confirm = document.querySelector("#conpass");
+  if (Password.value !== confirm.value) {
+    span[6].innerHTML = "the password is not valid";
+  }
+}
