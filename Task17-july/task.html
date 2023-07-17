@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            background-color: red;
+            margin: 10px;
+        }
+        #json-table  {
+            border: 1px black solid;
+            width: 100%;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="buildTable(myarray)"> Load Data </button> 
+
+    <table id="json-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Major</th>
+                <th>University</th>
+                <th>Image</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+
+    <script src="task.js"></script>
+</body>
+</html>
